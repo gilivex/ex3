@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define SIZE 50
+#define SIZE 5
 
 void Shift_Elements(int *arr, int i) {
     size_t index;
@@ -15,7 +15,7 @@ void Insertion_Sort(int *arr, int len) {
         key = *(arr + i);
         j = i - 1;
 
-        while (key < *(arr + j)) {
+        while ((j + 1) && key < *(arr + j)) {
             j--;
         }
         Shift_Elements((arr + j), i - j - 1);
@@ -34,6 +34,3 @@ int main() {
         printf("%d,", arr[j]);
     }
 }
-
-
-
