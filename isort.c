@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define SIZE 5
+#define SIZE 50
 
 void Shift_Elements(int *arr, int i) {
     size_t index;
